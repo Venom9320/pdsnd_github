@@ -94,9 +94,11 @@ def time_stats(df):
     # display the most common month
     common_month = df['month'].mode()[0]
     print('Most common Month is :', common_month)
+
     # display the most common day of week
     common_week_day = df['week_day'].mode()[0]
     print('Most common Day is :', common_week_day)
+
     # display the most common start hour
     df['hour'] = df['Start Time'].dt.hour
     common_start_hour = df['hour'].mode()[0]
@@ -214,8 +216,8 @@ def main():
         user_stats(df)
         raw_data(df)
 
-        restart = input('\nWould you like to keep exploring the data? Enter yes or no.\n')
-        if restart.lower() != 'yes':
+        restart = choice("\nWould you like to restart?\n\n[y]Yes\n[n]No\n\n>")
+        if restart.lower() != 'y':
             break
 
 
