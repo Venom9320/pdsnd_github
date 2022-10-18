@@ -3,8 +3,7 @@
 ### Date created
 10 October 2022
 
-### Project title
-Post your work on GitHub
+### Post your work on GitHub
 
 ### Description
 Refactoring my previous bikeshare project using git.
