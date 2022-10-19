@@ -216,7 +216,7 @@ def main():
         user_stats(df)
         raw_data(df)
 
-        restart = choice("\nWould you like to restart?\n\n[y]Yes\n[n]No\n\n>")
+        restart = input("\nWould you like to restart?\n\n[y]Yes\n[n]No\n\n>")
         if restart.lower() != 'y':
             break
 
